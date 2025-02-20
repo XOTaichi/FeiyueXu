@@ -295,9 +295,9 @@ function beny_tm_my_load() {
 
     "use strict";
 
-    var speed = 500;
+    var speed = 50;
     setTimeout(function() { beny_tm_preloader(); }, speed);
-    setTimeout(function() { jQuery('.beny_tm_all_wrap').addClass('animate'); }, speed + 2000);
+    setTimeout(function() { jQuery('.beny_tm_all_wrap').addClass('animate'); }, speed + 200);
 }
 
 // -----------------------------------------------------
