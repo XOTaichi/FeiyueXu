@@ -103,54 +103,112 @@
 
                     <a class="btn btnz" href="#llm">AI Application</a>
                     <a class="btn btnl" href="#is">Security</a>
+                    <a class="btn btnh" href="#web">Web</a>
+                    <a class="btn btng" href="#program">Software</a>
                     
                 </div>
-                <!-- LLM Safety Benchmark Section -->
                 <div class="portfolio-item" id="llm">
-                    <h3>LLM Safety Benchmark</h3>
-                    <p><strong>Duration:</strong> August 2024 – Current</p>
-                    <p><strong>Role:</strong> Lead Author</p>
-                    <p><strong>Supervisor:</strong> Prof. Shuo Wang</p>
-                    <!-- <p><strong>Institution:</strong> Shanghai Jiao Tong University</p> -->
-        
+                    <h3>Adversarial Training for Harmful Content Detection Neural Network</h3>
+                    <h5>Goal:</h5>
+                    <p>The goal of this project was to train a neural network to detect harmful content in a 1K dataset while ensuring that the network maintains high recognition accuracy for images with AIGC-style transformations and exhibits strong robustness against adversarial samples.</p>
+                
+                    <h5>Methods:</h5>
                     <ul class="portfolio-details">
-                        <li>Developed <strong>a train-free baseline</strong> for the LLM Safety Benchmark, integrating 10+ red teaming strategies and customized defenses on a unified evaluation platform.</li>
-                        <li>Investigated jailbreak resistance evolution in LLMs, assessing the effectiveness of old techniques on newer models.</li>
-                        <li><strong>Quantified misalignments</strong> between LLM-based judgment and human values.</li>
-                        <li>Analyzed jailbreak attack consistency across models, <strong>identifying vulnerabilities</strong> related to hidden space clustering, attention shifts, and security alignment.</li>
+                        <li>
+                            Analyzed and compared the accuracy of ResNet-18, ResNet-34, ResNet-50, EfficientNet, and ViT in training, selecting the optimal balance between sample size and robustness.
+                        </li>
+                        <li>
+                            Utilized data augmentation during model training, incorporating AIGC-style images and Gaussian noise into the training set to enhance robustness.
+                        </li>
+                        <li>
+                            Achieved a final accuracy of 92% on the native dataset, 89% on adversarial samples, and 90% on AIGC-style transformed images.
+                        </li>
                     </ul>
                 </div>
             </br>
-                <div class="portfolio-item">
-                    <h3>Privacy Protection in Large Language Models</h3>
-                    <p><strong>Duration:</strong> Feb 2024 – Sep 2024</p>
-                    <p><strong>Role:</strong> Contributor</p>
-                    <p><strong>Supervisor:</strong> Prof. Liyao Xiang</p>
-                    <!-- <p><strong>Institution:</strong> Shanghai Jiao Tong University</p> -->
-                    
-                    <ul class="portfolio-details">
-                        <li><strong>Developed a localized privacy detection system</strong>, eliminating reliance on cloud-based models, suitable for large model training corpus cleaning and everyday privacy protection.</li>
-                        <li><strong>Explored and compared SOTA triplet extraction techniques</strong> (NER, OpenIE, LLM), ultimately selecting supervised fine-tuned small models for knowledge graph construction.</li>
-                        <li><strong>Extended the knowledge graph with RAG techniques</strong> and performed <strong>end-to-end inference</strong> using a small language model, surpassing Microsoft Presidio's performance and approaching the leading inference model O1 (68%) on datasets like PersonaChat and Reddit.</li>
-                        <li><strong>Co-authored the paper "Graph-based Contextual Privacy Leakage Detection for User-Generated Texts"</strong>, currently under submission.</li>
-                    </ul>
-                </div>
+            <div class="portfolio-item" id="spam-detection">
+                <h3>Spam Email Detection</h3>
+                <h5>Goal:</h5>
+                <p>The goal of this project was to benchmark and compare various methods for spam email detection, evaluating accuracy, efficiency, and transferability across different techniques.</p>
+            
+                <h5>Methods:</h5>
+                <ul class="portfolio-details">
+                    <li>
+                        Benchmarked various methods for spam detection, including traditional machine learning algorithms (Naive Bayes, KNN), deep learning models (CNN, LSTM), and large models (Zero-shot) with RAG.
+                    </li>
+                    <li>In terms of time efficiency, traditional machine learning methods performed the best. Deep learning models achieved the highest accuracy, while large models excelled in transferability, especially when leveraging RAG for adaptation to new datasets.
+                    </li>
+                    <li>
+                        The study concluded that while large models may excel in transferability, deep learning models can be trained to become experts on specific datasets, offering high performance on specialized tasks. 
+                    </li>
+                    <li>LSTM models showed poor performance (around 50% accuracy), suggesting that the spam classification task might be heavily dependent on keyword patterns rather than sequential dependencies.
+                    </li>
+                </ul>
+            </div>
             </br>
-                <!-- Brain-Computer Interface Summer Program Section -->
                 <div class="portfolio-item" id="is">
-                    <h3>Brain-Computer Interface Summer Program</h3>
-                    <p><strong>Duration:</strong> July 2024 – Aug 2024</p>
-                    <p><strong>Role:</strong> Summer Workshop</p>
-                    <p><strong>Supervisor:</strong> Prof. Andrei Kozlov</p>
-                    <p><strong>Program:</strong> Top Talent Development Program</p>
-        
+                    <h3>Web Application Firewall (WAF) Based on Feature String Matching</h3>
+                    <h5>Goal:</h5>
+                    <p>The goal of this project was to develop a Web Application Firewall that could efficiently intercept and filter HTTP traffic, ensuring protection against various web-based attacks while maintaining high throughput under high concurrency.</p>
+                    <h5>Methods:</h5>
                     <ul class="portfolio-details">
-                        <li>Conducted in-depth research on the latest advancements in brain-computer interfaces (BCI) for signal acquisition (e.g. endovascular electrodes) and the influence of computational neuroscience on model architecture design.</li>
-                        <li>Compiled recent research on BCIs for human enhancement, analyzing how BCI technologies for people with disabilities can be optimized and adapted for healthy individuals from both signal acquisition and control device perspectives.</li>
-                        <li>Authored and published the academic paper <strong>"BCI for Exoskeletons and Prostheses: From Rehabilitation to Human Enhancement"</strong> at an international conference.</li>
+                        <li>
+                            Developed a Web firewall using Django, featuring a reverse proxy for HTTP message interception and a management interface for account, rule, and log management.
+                        </li>
+                        <li>
+                            Compared rule matching performance of Hyperscan and regular expressions (re), showing Hyperscan’s superior throughput stability with large rule sets.
+                        </li>
+                        <li>
+                            Designed an efficient rule matching engine with dynamic rule updates and real-time traffic monitoring, supporting LLM-driven automatic rule generation for easier use, and ensuring stable operation under high concurrency.
+                        </li>
                     </ul>
                 </div>
-        
+            </br>
+            <div class="portfolio-item" id="web">
+                <h3>Personalized Travel Itinerary Generator Website</h3>
+                <h5>Goal:</h5>
+                <p>The goal of this project was to develop a personalized travel itinerary generator website using Django, which automates travel planning based on user preferences while ensuring high security and scalability.</p>
+            
+                <h5>Methods:</h5>
+                <ul class="portfolio-details">
+                    <li>
+                        Utilized agent-based technology to automatically generate personalized itineraries based on the user's selected preferences, including location, interests, and time constraints.
+                    </li>
+                    <li>
+                        Implemented security defenses, including protection against XSS (Cross-Site Scripting), ensuring that user data is protected from malicious scripts.
+                    </li>
+                    <li>
+                        Addressed potential errors caused by high concurrency, implementing load balancing and error-handling mechanisms to maintain smooth site performance during peak traffic periods.
+                    </li>
+                    <li>
+                        Followed software development processes and DevOps security management cycles to ensure seamless integration, continuous deployment, and proper maintenance of security patches.
+                    </li>
+                </ul>
+            </div>
+            </br>
+            <div class="portfolio-item" id="program">
+                <h3>Database Management System (DBMS) with Indexing and Query Optimization</h3>
+                <h5>Goal:</h5>
+                <p>The goal of this project was to develop a simple Database Management System (DBMS) supporting basic CRUD operations (Create, Read, Update, Delete), indexing mechanisms, and query optimization to manage and manipulate data efficiently.</p>
+            
+                <h5>Methods:</h5>
+                <ul class="portfolio-details">
+                    <li>
+                        Developed the storage module with in-memory data indexed using a B+ tree, and used the `dill` library to serialize the B+ tree dictionary object into binary format for persistent storage on disk.
+                    </li>
+                    <li>
+                        Implemented a buffer manager using an LRU (Least Recently Used) algorithm to efficiently manage in-memory data.
+                    </li>
+                    <li>
+                        Applied algebraic and physical optimizations for query execution to improve the performance and efficiency of database queries.
+                    </li>
+                    <li>
+                        Designed an execution engine that uses query trees to execute queries according to an optimized query plan.
+                    </li>
+                </ul>
+            </div>
+            
+                
                 
             </div>
         </section>
