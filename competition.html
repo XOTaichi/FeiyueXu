@@ -102,54 +102,100 @@
                 <div class="beny_tm_title_holder">
 
                     <a class="btn btnz" href="#llm">LLM</a>
-                    <a class="btn btnl" href="#bci">BCI</a>
+                    <a class="btn btna" href="#model">Modeling</a>
+                    <a class="btn btnq" href="#robot">Robotic</a>
+                    
+                    <a class="btn btnl" href="#ctf">CTF</a>
                     
                 </div>
-                <!-- LLM Safety Benchmark Section -->
                 <div class="portfolio-item" id="llm">
-                    <h3>LLM Safety Benchmark</h3>
-                    <p><strong>Duration:</strong> August 2024 – Current</p>
-                    <p><strong>Role:</strong> Lead Author</p>
-                    <p><strong>Supervisor:</strong> Prof. Shuo Wang</p>
-                    <!-- <p><strong>Institution:</strong> Shanghai Jiao Tong University</p> -->
-        
-                    <ul class="portfolio-details">
-                        <li>Developed <strong>a train-free baseline</strong> for the LLM Safety Benchmark, integrating 10+ red teaming strategies and customized defenses on a unified evaluation platform.</li>
-                        <li>Investigated jailbreak resistance evolution in LLMs, assessing the effectiveness of old techniques on newer models.</li>
-                        <li><strong>Quantified misalignments</strong> between LLM-based judgment and human values.</li>
-                        <li>Analyzed jailbreak attack consistency across models, <strong>identifying vulnerabilities</strong> related to hidden space clustering, attention shifts, and security alignment.</li>
+                <h3>Global AI Attack-Defense Challenge</h3>
+                <h5>Result:</h5> 
+                <p>Third-place Team</p>
+                <h5>Objective:</h5> 
+                <p>The goal of this competition is to jailbreak a Stable Diffusion model with pre-text security detection and post-image security detection, ensuring the generated image remains consistent with the original intent.</p>
+                <h5>Solution: T2I-Fuzzer——Jailbreaking Text-to-Image Models with Hybrid Strategies</h5> 
+                <div class="resume-item-list">
+                    <ul>
+                        <li>Developed a strategy library for bypassing post-image security, including adversarial canvas separation, with <strong>discrete weight</strong> searching to optimize element bypass.</li>
+                        <li>Implemented pre-text bypass strategies using knowledge base retrieval, generating multiple prompts with <strong>a genetic algorithm</strong> for mapping embeddings to harmless token-IDs for text jailbreaking.</li>
+                        <li>Designed a zero-sum game-breaking module combining <strong>RAG, GAN, and COT</strong> for prompt optimization, integrating HITL to blend human experience with ChatGPT’s generative capabilities for iterative jailbreaking.</li>
                     </ul>
+                </div>
                 </div>
             </br>
-                <div class="portfolio-item">
-                    <h3>Privacy Protection in Large Language Models</h3>
-                    <p><strong>Duration:</strong> Feb 2024 – Sep 2024</p>
-                    <p><strong>Role:</strong> Contributor</p>
-                    <p><strong>Supervisor:</strong> Prof. Liyao Xiang</p>
-                    <!-- <p><strong>Institution:</strong> Shanghai Jiao Tong University</p> -->
-                    
-                    <ul class="portfolio-details">
-                        <li><strong>Developed a localized privacy detection system</strong>, eliminating reliance on cloud-based models, suitable for large model training corpus cleaning and everyday privacy protection.</li>
-                        <li><strong>Explored and compared SOTA triplet extraction techniques</strong> (NER, OpenIE, LLM), ultimately selecting supervised fine-tuned small models for knowledge graph construction.</li>
-                        <li><strong>Extended the knowledge graph with RAG techniques</strong> and performed <strong>end-to-end inference</strong> using a small language model, surpassing Microsoft Presidio's performance and approaching the leading inference model O1 (68%) on datasets like PersonaChat and Reddit.</li>
-                        <li><strong>Co-authored the paper "Graph-based Contextual Privacy Leakage Detection for User-Generated Texts"</strong>, currently under submission.</li>
-                    </ul>
-                </div>
+            <div class="portfolio-item" id="model">
+            <h3>National Undergraduate Mathematical Modeling Competition</h3>
+            <h5>Result:</h5> 
+            <p>Second Prize in Shanghai Division</p>
+            <h5>Objective:</h5> 
+            <p>The goal of this competition was to devise a replenishment and pricing strategy for six vegetable categories based on sales and pricing data, loss rates, and historical trends from July 1, 2020, to June 30, 2023. This involved analyzing sales details, wholesale prices, and loss data to make data-driven decisions about inventory management and pricing strategies for a supermarket chain.</p>
+            <h5>Solution: Seasonal Regression Model & Linear Programming Optimization</h5>
+            <div class="resume-item-list">
+                <ul>
+                    <li>Developed a <strong>seasonal regression model</strong> to predict sales trends for each vegetable category, taking into account seasonal variations and historical data.</li>
+                    <li>Utilized <strong>linear programming optimization</strong> to determine the most cost-effective replenishment quantities and pricing strategies, minimizing waste and maximizing revenue.</li>
+                    <li>Addressed <strong>missing data</strong> using interpolation techniques and time-series forecasting to ensure robust predictions despite gaps in historical sales data.</li>
+                    <li>Incorporated <strong>historical loss rate analysis</strong> to adjust replenishment strategies based on product shelf life and loss rates, ensuring that inventory is optimized for both sales and waste reduction.</li>
+                </ul>
+            </div>
+            </div>
             </br>
-                <!-- Brain-Computer Interface Summer Program Section -->
-                <div class="portfolio-item" id="bci">
-                    <h3>Brain-Computer Interface Summer Program</h3>
-                    <p><strong>Duration:</strong> July 2024 – Aug 2024</p>
-                    <p><strong>Role:</strong> Summer Workshop</p>
-                    <p><strong>Supervisor:</strong> Prof. Andrei Kozlov</p>
-                    <p><strong>Program:</strong> Top Talent Development Program</p>
-        
-                    <ul class="portfolio-details">
-                        <li>Conducted in-depth research on the latest advancements in brain-computer interfaces (BCI) for signal acquisition (e.g. endovascular electrodes) and the influence of computational neuroscience on model architecture design.</li>
-                        <li>Compiled recent research on BCIs for human enhancement, analyzing how BCI technologies for people with disabilities can be optimized and adapted for healthy individuals from both signal acquisition and control device perspectives.</li>
-                        <li>Authored and published the academic paper <strong>"BCI for Exoskeletons and Prostheses: From Rehabilitation to Human Enhancement"</strong> at an international conference.</li>
+            <div class="portfolio-item" id="robot">
+            <h3>UAV Freshman Cup - Technology Innovation Drone Competition</h3>
+            <h5>Result:</h5> 
+            <p>Second Prize</p>
+            <h5>Objective:</h5> 
+            <p>The goal of this competition was to develop a drone flight control system incorporating gesture recognition, Aruco code detection, and circle detection, allowing the drone to autonomously fly through predefined circles and land precisely on a target without collision.</p>
+            <h5>Solution: Drone Flight Control with Gesture, Aruco Code, and Circle Detection</h5>
+            <div class="resume-item-list">
+                <ul>
+                    <li>Implemented <strong>Hough Circle detection</strong> in a simulation environment to identify circular markers and guide the drone through specific waypoints.</li>
+                    <li>Successfully integrated <strong>gesture recognition</strong> and <strong>Aruco marker detection</strong> on the Robomaster TT drone, enabling intuitive control and navigation using hand gestures and marker-based positioning.</li>
+                    <li>Achieved autonomous drone flight, navigating through all circles without collision and landing precisely on the target using real-time visual feedback from the drone’s cameras.</li>
+                    <li>Tested and refined the system in real-world environments, ensuring consistent performance and robustness in various conditions.</li>
+                </ul>
+            </div>
+        </br>
+            <div class="portfolio-item" id="robot">
+                <h3>Freshman Cup Structural Design Competition</h3>
+                <h5>Result:</h5> 
+                <p>Third Prize</p>
+                <h5>Objective:</h5> 
+                <p>The goal of this competition was to design a structural model capable of withstanding vertical static and impact loads. The task was to catch a sandbag falling from a certain height and transport it to a specified area. The model's score was determined by the ratio of the total number of sandbags caught to the model's weight, as well as the competition time.</p>
+                <h5>Solution: Box-Type Structure with Four Supports and a Fixed Plate</h5>
+                <div class="resume-item-list">
+                    <ul>
+                        <li>Designed a <strong>box-type structure</strong> to effectively distribute vertical static and dynamic loads, ensuring stability under both static and impact conditions.</li>
+                        <li>Incorporated <strong>four support pillars</strong> strategically positioned to enhance load-bearing capacity and provide structural integrity during the impact load phase.</li>
+                        <li>Developed a <strong>fixed plate system</strong> to securely hold the sandbag, while minimizing the deformation caused by both vertical static loads and the impact force from the falling sandbag.</li>
+                        <li>Conducted detailed stress analysis using mechanical principles, ensuring the structure’s ability to withstand repeated impacts while maintaining the integrity of the entire model.</li>
                     </ul>
                 </div>
+
+            </div>
+            </div>
+        </br>
+        <div class="portfolio-item" id="ctf">
+            <h3>National College Student Software Security Attack-Defense Competition</h3>
+<h5>Result:</h5> 
+<p>Qualified for the Semi-Finals (Ongoing)</p>
+<h5>Objective:</h5> 
+<p>The competition involved small-scale software models containing security vulnerabilities, requiring participating teams to identify and exploit vulnerabilities in the software. The aim was to test the teams' skills in vulnerability discovery, exploitation, and defense strategies in real-world software applications.</p>
+<!-- <h5>Solution:</h5>
+<div class="resume-item-list">
+    <ul>
+        <li>Analyzed and identified critical <strong>security vulnerabilities</strong> in the provided software, including buffer overflow, input validation flaws, and memory management issues.</li>
+        <li>Developed and executed <strong>exploitation techniques</strong> to bypass security measures and gain unauthorized access to the vulnerable components of the software.</li>
+        <li>Implemented <strong>countermeasures and defenses</strong> to mitigate potential attacks, focusing on input sanitization, secure coding practices, and proper memory management techniques.</li>
+        <li>Collaborated with team members to optimize the exploitation strategies and defense mechanisms, preparing for the upcoming rounds of the competition.</li>
+    </ul>
+</div> -->
+
+        </div>
+            
+
+                
         
                 
             </div>
